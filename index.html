@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project description" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Signup Form</title>
+    <link rel="icon"  href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Signup</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <lable class="sr-only" for="name">Full Name</lable>
+            <input type="text" id="name" name="name"
+            placeholder="Full Name" required />
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" id="email" name="email"
+            placeholder="Email" required />
+            <label class="sr-only" for="password">Password</label>
+            <input type="password" id="password" name="password"
+            placeholder="Password" required />
+            <label class="sr-only" for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Confirm Password" required />
+            <lable class="sr-only" for="dob">Date of Birth</lable>
+            <input type="date" id="dob" name="dob" required />
+
+            <fieldset>
+                <legend class="sr-only">Select your role</legend>
+                <label>
+                    <input type="radio" name="role" value="student" requried checked>
+                    Student
+                </label>
+                <label>
+                    <input type="radio" name="role" value="employee" requried>
+                    Employee
+                </label>
+
+            </fieldset>
+            <label class="terms">
+                <input type="checkbox" name="terms" required>
+                I agree to all the Terms and Conditions
+            </label>
+            <button type="submit">SignUp</button>
+            
+        
+        </form>
+    </main>
+   
+  </body>
+</html>
