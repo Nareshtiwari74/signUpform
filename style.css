@@ -1,65 +1,71 @@
-*{
+body{
+    background: black;
+    color: white;
+    font-family: Arial;
+    margin: 8% 9%;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#name, #email, #password, #confirm, #dob{
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 30px;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
-
-header,main,footer{
-    width: 80%;
-    max-width: 1100px;
-    margin: auto;
-}
-header{
-    padding-top: 70ps;
-}
-h1{
-    font-size: clamp(55px,7vw,96px);
-    font-weight:400;
-    margin: 0 0 10px;
-
-}
-form{
-    display: flex;
-    flex-direction: column;
-}
-form>input{
-    background:transparent;
+input::placeholder{
     color:white;
-    border: none;
-    border-bottom: 2px solid white;
-    border-radius: 0;
-    padding: 22px 14px;
-    margin-bottom:15px;
-    font-size:32px;
-    width:100%;
-    font-family: Arial, sans-serif;
 }
-
-form>input::placeholder{
-    color: #eee;
-    opacity:1;
-
-}
-
-form>input:focus{
-    outline: none;
-    border-bottom-color: #60a5fa;
-}
-form>input:not(:placeholder-shown):invalid:not(:focus){
-    border-bottom-color: #ff6b6b;
-
-}
-input[type="date"]{
+#dob{
     color-scheme: dark;
 }
 fieldset{
     border: none;
-    padding: 8px 0;
-    margin:0;
-    font-family: Georgia,serif;
-    font-size: 20px;
+    padding 0;
+    margin-bottom: 15px 0;
+}
+.terms{
+    display: block;
+    margin: 20px 0;
+}
+button{
+    background: white;
+    color: black;
+    font-size: 30px;
+    padding: 10px 70px;
+    cursor: pointer;
+
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+@media(max-width: 600px){
+    body{
+        margin: 30px 5%;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #name, #email, #password, #confirm, #dob{
+        font-size: 20px;
+        
+    }
+   
 }
